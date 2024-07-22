@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+      background-color:#F0F7EF;
+    }
+    header{
+      position: fixed;
+      width:100vw;
+      z-index: 4;
+    }
+    #carouselExampleIndicators{
+      padding-top: 110px;
+    }
+    nav{
+        background-color: pink;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .sale{
+      width:100vw;
+      height: 650px;
+      object-fit:initial;
+    }
+    h2{
+      color:#A9802A;
+    }
+    .midpage{
+      background-color: white;
+    }
+    .midhead{
+      color:#A9802A;
+    }
+    .midpara{
+      font-weight: 500;
+    }
+    .middle{
+      display:flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    .middleleftupper{
+      text-align: center;
+      height: 250px;
+      width: 250px;
+    }
+    .middleleftdown{
+      text-align: center;
+      height: 250px;
+      width: 250px;
+    }
+    .middlerightupper{
+      text-align: center;
+      height: 250px;
+      width: 250px;
+    }
+    .middlerightlower{
+      text-align: center;
+      height: 250px;
+      width: 250px;
+    }
+    .midheading{
+      text-align: center;
+    }
+    .midparagraph{
+      text-align: center;
+    }
+    .rating{
+      text-align: center;
+      margin-top: 40px;
+    }
+    button.endf{
+      padding: 8px 20px;
+      font-size: 16px;
+      border: 1px solid;
+      border-color: #a9802a ;
+      color: #a9802a;
+      background: #f4bcb4;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .copyr{
+    margin-top: 160px;
+    margin-left: 430px;
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  a:hover{
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+  }
+  .social-icons{
+    display: flex;
+    gap:15px;
+  }
+  .ficon{
+    display: flex;
+  }
+  .footercontent{
+    margin-top: 50px;
+  }
+  footer{
+    background-color: #B0DCD1;
+    display: flex;
+    gap:100px;
+  }
+  .footerimg{
+    height:200px;
+  }
+  @media only screen and (max-width:700px) {
+    .midpage{
+      display: flex;
+      flex-direction: column;
+    }
+    .middle{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .middleimg{
+      width:600px;
+    }
+    footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footerimg{
+    width:100vw;
+    height:300px;
+  }
+  }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <img class="logo" src="./cafe_logo.png" />
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./menu.html">Beverages</a></li>
+                      <li><a class="dropdown-item" href="./menu.html">Cakes</a></li>
+                      <li><a class="dropdown-item" href="./menu.html">Biscuits,Cookies & Crakers</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./menu.html">Whole menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./order.html">Order now</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./menu.html"><img class="sale" src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/combos_of_4_web_banner_220729_Rakhi_Website_Banner_copy_2.jpg?v=1720804112"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./menu.html"><img class="sale" src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/BLUEBERRY_DANISH_WEB_BANNER.jpg?v=1709277953" ></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./menu.html" ><img class="sale" src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/220729_Juice_Website_Banner_copy_220729_Rakhi_Website_Banner.jpg?v=1700118773" ></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="midpage">
+      <h2 class="midheading">Food of Gods,Freshly Baked!</h2>
+      <p class="midparagraph">Since 2004, we've been serving our guests the best quality treats, traditionally made and presented with care.</p>
+      <div class="middle">
+        <div class="middleleft">
+          <div class="middleleftupper">
+          <h3 class="midhead">AUTHENTIC RECIPES</h3>
+            <p class="midpara">Our products are based on
+              traditional home-style recipes
+              using fresh ingredients.</p>
+          </div>
+          <div class="middleleftdown">
+            <h3 class="midhead">BAKED WITH LOVE</h3>
+            <p class="midpara">Our passion for baking is poured into
+              every recipe, serving smiles on a
+              plate everyday.</p>
+          </div>
+        </div>
+        <div class="middleimg">
+          <img src="https://theobroma.in/cdn/shop/files/theo-home_03c4e3a4-9dc9-4de7-9464-16e655a238ed_2.jpg?v=1630652883" >
+        </div>
+        <div class="middleright">
+          <div class="middlerightupper">
+            <h3 class="midhead"> COMMITTED TO QUALITY</h3>
+            <p class="midpara">From our ingredients to our
+              kitchen operations & guest services,
+             we always prioritize quality.</p>
+          </div>
+          <div class="middlerightlower">
+            <h3 class="midhead"> HONESTLY PRICED</h3>
+            <p class="midpara">We constantly strive to offer the best
+              products at the right prices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+      <h2>Like Our Products?</h2>
+      <p class="midpara">Treat yourself to your favourite The Drew's Cafe products or surprise your loved ones with an edible gift.</p>
+      <a href="./order.html"><button class="endf">ORDER ONLINE</button>
+    </div>
+    <footer>
+      <div class="footerimg">
+        <img class="footerimg" src="./cafe_logo.png" />
+      </div>
+      <div class="footercontent">
+        <h4>Contact Us</h4>
+        <div class="social-icons">
+          <div class="ficon">  
+            <a href="https://facebook.com/freecodecamp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+              Facebook
+            </a>
+          </div>
+          <div class="ficon">
+            <a href="https://github.com/freecodecamp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+              GitHub
+            </a>
+          </div>
+          <div class="ficon">
+            <a href="https://twitter.com/freecodecamp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+              Twitteer
+            </a>
+          </div>
+          <div class="ficon">
+            <a href="example@example.com" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+            </svg>
+              Send a Mail
+            </a>
+          </div>
+          <div class="ficon">
+            <a href="tel:555-555-5555" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+              Call me
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p class="copyr"> © All Rights reserved</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
